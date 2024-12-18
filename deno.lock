@@ -23,6 +23,7 @@
     "npm:@types/node@*": "22.5.4",
     "npm:@types/react@^18.3.12": "18.3.12",
     "npm:@vitejs/plugin-react@^4.3.3": "4.3.3_vite@5.4.11__@types+node@22.5.4_@babel+core@7.26.0_@types+node@22.5.4",
+    "npm:antd@^5.22.5": "5.22.5_react@18.3.1_react-dom@18.3.1__react@18.3.1_dayjs@1.11.13",
     "npm:path-to-regexp@6.2.1": "6.2.1",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
     "npm:react-router-dom@^6.28.0": "6.28.0_react@18.3.1_react-dom@18.3.1__react@18.3.1",
@@ -113,6 +114,68 @@
       "dependencies": [
         "@jridgewell/gen-mapping",
         "@jridgewell/trace-mapping"
+      ]
+    },
+    "@ant-design/colors@7.1.0": {
+      "integrity": "sha512-MMoDGWn1y9LdQJQSHiCC20x3uZ3CwQnv9QMz6pCmJOrqdgM9YxsoVVY0wtrdXbmfSgnV0KNk6zi09NAhMR2jvg==",
+      "dependencies": [
+        "@ctrl/tinycolor"
+      ]
+    },
+    "@ant-design/cssinjs-utils@1.1.3_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-nOoQMLW1l+xR1Co8NFVYiP8pZp3VjIIzqV6D6ShYF2ljtdwWJn5WSsH+7kvCktXL/yhEtWURKOfH5Xz/gzlwsg==",
+      "dependencies": [
+        "@ant-design/cssinjs",
+        "@babel/runtime",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@ant-design/cssinjs@1.22.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-SLuXM4wiEE1blOx94iXrkOgseMZHzdr4ngdFu3VVDq6AOWh7rlwqTkMAtJho3EsBF6x/eUGOtK53VZXGQG7+sQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "@emotion/hash",
+        "@emotion/unitless",
+        "classnames",
+        "csstype",
+        "rc-util",
+        "react",
+        "react-dom",
+        "stylis"
+      ]
+    },
+    "@ant-design/fast-color@2.0.6": {
+      "integrity": "sha512-y2217gk4NqL35giHl72o6Zzqji9O7vHh9YmhUVkPtAOpoTCH4uWxo/pr4VE8t0+ChEPs0qo4eJRC5Q1eXWo3vA==",
+      "dependencies": [
+        "@babel/runtime"
+      ]
+    },
+    "@ant-design/icons-svg@4.4.2": {
+      "integrity": "sha512-vHbT+zJEVzllwP+CM+ul7reTEfBR0vgxFe7+lREAsAA7YGsYpboiq2sQNeQeRvh09GfQgs/GyFEvZpJ9cLXpXA=="
+    },
+    "@ant-design/icons@5.5.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-xc53rjVBl9v2BqFxUjZGti/RfdDeA8/6KYglmInM2PNqSXc/WfuGDTifJI/ZsokJK0aeKvOIbXc9y2g8ILAhEA==",
+      "dependencies": [
+        "@ant-design/colors",
+        "@ant-design/icons-svg",
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@ant-design/react-slick@1.1.2_react@18.3.1": {
+      "integrity": "sha512-EzlvzE6xQUBrZuuhSAFTdsr4P2bBBHGZwKFemEfq8gIGyIQCxalYfZW/T2ORbtQx5rU69o+WycP3exY/7T1hGA==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "json2mq",
+        "react",
+        "resize-observer-polyfill",
+        "throttle-debounce"
       ]
     },
     "@babel/code-frame@7.26.2": {
@@ -221,6 +284,12 @@
         "@babel/helper-plugin-utils"
       ]
     },
+    "@babel/runtime@7.26.0": {
+      "integrity": "sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==",
+      "dependencies": [
+        "regenerator-runtime"
+      ]
+    },
     "@babel/template@7.25.9": {
       "integrity": "sha512-9DGttpmPvIxBb/2uwpVo3dqJ+O6RooAFOS+lB+xDqoE2PVCE8nfoHMdZLpfCQRLwvohzXISPZcgxt80xLfsuwg==",
       "dependencies": [
@@ -248,11 +317,20 @@
         "@babel/helper-validator-identifier"
       ]
     },
+    "@ctrl/tinycolor@3.6.1": {
+      "integrity": "sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA=="
+    },
     "@deno/vite-plugin@1.0.0_vite@5.4.11__@types+node@22.5.4_@types+node@22.5.4": {
       "integrity": "sha512-Q9UeWqs3s7B5lqzu1Z5QrzYAzqTj3+F9YW17tWobGRbT2G40ihwis6zK/+QgMgcG4fm3IqdIfXmpQYhkZpdMfw==",
       "dependencies": [
         "vite"
       ]
+    },
+    "@emotion/hash@0.8.0": {
+      "integrity": "sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow=="
+    },
+    "@emotion/unitless@0.7.5": {
+      "integrity": "sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg=="
     },
     "@esbuild/aix-ppc64@0.21.5": {
       "integrity": "sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ=="
@@ -345,6 +423,93 @@
       "dependencies": [
         "@jridgewell/resolve-uri",
         "@jridgewell/sourcemap-codec"
+      ]
+    },
+    "@rc-component/async-validator@5.0.4": {
+      "integrity": "sha512-qgGdcVIF604M9EqjNF0hbUTz42bz/RDtxWdWuU5EQe3hi7M8ob54B6B35rOsvX5eSvIHIzT9iH1R3n+hk3CGfg==",
+      "dependencies": [
+        "@babel/runtime"
+      ]
+    },
+    "@rc-component/color-picker@2.0.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-WcZYwAThV/b2GISQ8F+7650r5ZZJ043E57aVBFkQ+kSY4C6wdofXgB0hBx+GPGpIU0Z81eETNoDUJMr7oy/P8Q==",
+      "dependencies": [
+        "@ant-design/fast-color",
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/context@1.4.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-kFcNxg9oLRMoL3qki0OMxK+7g5mypjgaaJp/pkOis/6rVxma9nJBF/8kCIuTYHUQNr0ii7MxqE33wirPZLJQ2w==",
+      "dependencies": [
+        "@babel/runtime",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/mini-decimal@1.1.0": {
+      "integrity": "sha512-jS4E7T9Li2GuYwI6PyiVXmxTiM6b07rlD9Ge8uGZSCz3WlzcG5ZK7g5bbuKNeZ9pgUuPK/5guV781ujdVpm4HQ==",
+      "dependencies": [
+        "@babel/runtime"
+      ]
+    },
+    "@rc-component/mutate-observer@1.1.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-QjrOsDXQusNwGZPf4/qRQasg7UFEj06XiCJ8iuiq/Io7CrHrgVi6Uuetw60WAMG1799v+aM8kyc+1L/GBbHSlw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/portal@1.1.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-6f813C0IsasTZms08kfA8kPAGxbbkYToa8ALaiDIGGECU4i9hj8Plgbx0sNJDrey3EtHO30hmdaxtT0138xZcg==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/qrcode@1.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-L+rZ4HXP2sJ1gHMGHjsg9jlYBX/SLN2D6OxP9Zn3qgtpMWtO2vUfxVFwiogHpAIqs54FnALxraUy/BCO1yRIgg==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/tour@1.15.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-Tr2t7J1DKZUpfJuDZWHxyxWpfmj8EZrqSgyMZ+BCdvKZ6r1UDsfU46M/iWAAFBy961Ssfom2kv5f3UcjIL2CmQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/portal",
+        "@rc-component/trigger",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "@rc-component/trigger@2.2.6_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-/9zuTnWwhQ3S3WT1T8BubuFTT46kvnXgaERR9f4BTKyn61/wpf/BvbImzYBubzJibU707FxwbKszLlHjcLiv1Q==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/portal",
+        "classnames",
+        "rc-motion",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
       ]
     },
     "@remix-run/router@1.21.0": {
@@ -463,6 +628,62 @@
         "vite"
       ]
     },
+    "antd@5.22.5_react@18.3.1_react-dom@18.3.1__react@18.3.1_dayjs@1.11.13": {
+      "integrity": "sha512-+0UP8w+ULVv2OIzCDVz7j6I0UfH6mMLHSWO6qzpBc+9psOoVQLRbyAE21XnZM/eGrt2MNsEDL5fmlhXL/V8JyQ==",
+      "dependencies": [
+        "@ant-design/colors",
+        "@ant-design/cssinjs",
+        "@ant-design/cssinjs-utils",
+        "@ant-design/icons",
+        "@ant-design/react-slick",
+        "@babel/runtime",
+        "@ctrl/tinycolor",
+        "@rc-component/color-picker",
+        "@rc-component/mutate-observer",
+        "@rc-component/qrcode",
+        "@rc-component/tour",
+        "@rc-component/trigger",
+        "classnames",
+        "copy-to-clipboard",
+        "dayjs",
+        "rc-cascader",
+        "rc-checkbox",
+        "rc-collapse",
+        "rc-dialog",
+        "rc-drawer",
+        "rc-dropdown",
+        "rc-field-form",
+        "rc-image",
+        "rc-input",
+        "rc-input-number",
+        "rc-mentions",
+        "rc-menu",
+        "rc-motion",
+        "rc-notification",
+        "rc-pagination",
+        "rc-picker",
+        "rc-progress",
+        "rc-rate",
+        "rc-resize-observer",
+        "rc-segmented",
+        "rc-select",
+        "rc-slider",
+        "rc-steps",
+        "rc-switch",
+        "rc-table",
+        "rc-tabs",
+        "rc-textarea",
+        "rc-tooltip",
+        "rc-tree",
+        "rc-tree-select",
+        "rc-upload",
+        "rc-util",
+        "react",
+        "react-dom",
+        "scroll-into-view-if-needed",
+        "throttle-debounce"
+      ]
+    },
     "browserslist@4.24.2": {
       "integrity": "sha512-ZIc+Q62revdMcqC6aChtW4jz3My3klmCO1fEmINZY/8J3EpBg5/A/D0AKmBveUh6pgoeycoMkVMko84tuYS+Gg==",
       "dependencies": [
@@ -475,11 +696,26 @@
     "caniuse-lite@1.0.30001680": {
       "integrity": "sha512-rPQy70G6AGUMnbwS1z6Xg+RkHYPAi18ihs47GH0jcxIG7wArmPgY3XbS2sRdBbxJljp3thdT8BIqv9ccCypiPA=="
     },
+    "classnames@2.5.1": {
+      "integrity": "sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow=="
+    },
+    "compute-scroll-into-view@3.1.0": {
+      "integrity": "sha512-rj8l8pD4bJ1nx+dAkMhV1xB5RuZEyVysfxJqB1pRchh1KVvwOv9b7CGB8ZfjTImVv2oF+sYMUkMZq6Na5Ftmbg=="
+    },
     "convert-source-map@2.0.0": {
       "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg=="
     },
+    "copy-to-clipboard@3.3.3": {
+      "integrity": "sha512-2KV8NhB5JqC3ky0r9PMCAZKbUHSwtEo4CwCs0KXgruG43gX5PMqDEBbVU4OUzw2MuAWUfsuFmWvEKG5QRfSnJA==",
+      "dependencies": [
+        "toggle-selection"
+      ]
+    },
     "csstype@3.1.3": {
       "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
+    },
+    "dayjs@1.11.13": {
+      "integrity": "sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg=="
     },
     "debug@4.3.7": {
       "integrity": "sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==",
@@ -536,6 +772,12 @@
     "jsesc@3.0.2": {
       "integrity": "sha512-xKqzzWXDttJuOcawBt4KnKHHIf5oQ/Cxax+0PWFG+DFDgHNAdi+TXECADI+RYiFUMmx8792xsMbbgXj4CwnP4g=="
     },
+    "json2mq@0.2.0": {
+      "integrity": "sha512-SzoRg7ux5DWTII9J2qkrZrqV1gt+rTaoufMxEzXbS26Uid0NwaJd123HcoB80TgubEppxxIGdNxCx50fEoEWQA==",
+      "dependencies": [
+        "string-convert"
+      ]
+    },
     "json5@2.2.3": {
       "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg=="
     },
@@ -574,6 +816,391 @@
         "source-map-js"
       ]
     },
+    "rc-cascader@3.30.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-rrzSbk1Bdqbu+pDwiLCLHu72+lwX9BZ28+JKzoi0DWZ4N29QYFeip8Gctl33QVd2Xg3Rf14D3yAOG76ElJw16w==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-select",
+        "rc-tree",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-checkbox@3.3.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-Ih3ZaAcoAiFKJjifzwsGiT/f/quIkxJoklW4yKGho14Olulwn8gN7hOBve0/WGDg5o/l/5mL0w7ff7/YGvefVw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-collapse@3.9.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-swDdz4QZ4dFTo4RAUMLL50qP0EY62N2kvmk2We5xYdRwcRn8WcYtuetCJpwpaCbUfUt5+huLpVxhvmnK+PHrkA==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-dialog@9.6.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-ApoVi9Z8PaCQg6FsUzS8yvBEQy0ZL2PkuvAgrmohPkN3okps5WZ5WQWPc1RNuiOKaAYv8B97ACdsFU5LizzCqg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/portal",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-drawer@7.2.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-9lOQ7kBekEJRdEpScHvtmEtXnAsy+NGDXiRWc2ZVC7QXAazNVbeT4EraQKYwCME8BJLa8Bxqxvs5swwyOepRwg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/portal",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-dropdown@4.2.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-YDAlXsPv3I1n42dv1JpdM7wJ+gSUBfeyPK59ZpBD9jQhK9jVuxpjj3NmWQHOBceA1zEPVX84T2wbdb2SD0UjmA==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-field-form@2.7.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-hgKsCay2taxzVnBPZl+1n4ZondsV78G++XVsMIJCAoioMjlMQR9YwAp7JZDIECzIu2Z66R+f4SFIRrO2DjDNAA==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/async-validator",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-image@7.11.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-aZkTEZXqeqfPZtnSdNUnKQA0N/3MbgR7nUnZ+/4MfSFWPFHZau4p5r5ShaI0KPEMnNjv4kijSCFq/9wtJpwykw==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/portal",
+        "classnames",
+        "rc-dialog",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-input-number@9.3.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-JQ363ywqRyxwgVxpg2z2kja3CehTpYdqR7emJ/6yJjRdbvo+RvfE83fcpBCIJRq3zLp8SakmEXq60qzWyZ7Usw==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/mini-decimal",
+        "classnames",
+        "rc-input",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-input@1.6.4_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-lBZhfRD4NSAUW0zOKLUeI6GJuXkxeZYi0hr8VcJgJpyTNOvHw1ysrKWAHcEOAAHj7guxgmWYSi6xWrEdfrSAsA==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-mentions@2.17.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-sfHy+qLvc+p8jx8GUsujZWXDOIlIimp6YQz7N5ONQ6bHsa2kyG+BLa5k2wuxgebBbH97is33wxiyq5UkiXRpHA==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "rc-input",
+        "rc-menu",
+        "rc-textarea",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-menu@9.16.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-vAL0yqPkmXWk3+YKRkmIR8TYj3RVdEt3ptG2jCJXWNAvQbT0VJJdRyHZ7kG/l1JsZlB+VJq/VcYOo69VR4oD+w==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "rc-motion",
+        "rc-overflow",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-motion@2.9.4_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-TAPUUufDqhPO669qJobI0d9U0XZ/VPNQyZTivUxxzU1EyuPe3PtHSx7Kb902KuzQgu7sS18z8GguaxZEALV/ww==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-notification@5.6.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-Id4IYMoii3zzrG0lB0gD6dPgJx4Iu95Xu0BQrhHIbp7ZnAZbLqdqQ73aIWH0d0UFcElxwaKjnzNovTjo7kXz7g==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-overflow@1.3.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-nsUm78jkYAoPygDAcGZeC2VwIg/IBGSodtOY3pMof4W3M9qRJgqaDYm03ZayHlde3I6ipliAxbN0RUcGf5KOzw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-pagination@5.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-QjrPvbAQwps93iluvFM62AEYglGYhWW2q/nliQqmvkTi4PXP4HHoh00iC1Sa5LLVmtWQHmG73fBi2x6H6vFHRg==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-picker@4.8.3_dayjs@1.11.13_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-hJ45qoEs4mfxXPAJdp1n3sKwADul874Cd0/HwnsEOE60H+tgiJUGgbOD62As3EG/rFVNS5AWRfBCDJJfmRqOVQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "dayjs",
+        "rc-overflow",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-progress@4.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-oofVMMafOCokIUIBnZLNcOZFsABaUw8PPrf1/y0ZBvKZNpOiu5h4AO9vv11Sw0p4Hb3D0yGWuEattcQGtNJ/aw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-rate@2.13.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-oxvx1Q5k5wD30sjN5tqAyWTvJfLNNJn7Oq3IeS4HxWfAiC4BOXMITNAsw7u/fzdtO4MS8Ki8uRLOzcnEuoQiAw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-resize-observer@1.4.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-JbAeFDsaaZRPwaTlXnCqgeO9c6E7qoaE/hxsub08cdnnPn6767c/j9+r/TifUdfvwXtdcfHygKbZ7ecM/PXo/Q==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom",
+        "resize-observer-polyfill"
+      ]
+    },
+    "rc-segmented@2.5.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-B28Fe3J9iUFOhFJET3RoXAPFJ2u47QvLSYcZWC4tFYNGPEjug5LAxEasZlA/PpAxhdOPqGWsGbSj7ftneukJnw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-select@14.16.4_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-jP6qf7+vjnxGvPpfPWbGYfFlSl3h8L2XcD4O7g2GYXmEeBC0mw+nPD7i++OOE8v3YGqP8xtYjRKAWCMLfjgxlw==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "rc-motion",
+        "rc-overflow",
+        "rc-util",
+        "rc-virtual-list",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-slider@11.1.7_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-ytYbZei81TX7otdC0QvoYD72XSlxvTihNth5OeZ6PMXyEDq/vHdWFulQmfDGyXK1NwKwSlKgpvINOa88uT5g2A==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-steps@6.0.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-lKHL+Sny0SeHkQKKDJlAjV5oZ8DwCdS2hFhAkIjuQt1/pB81M0cA0ErVFdHq9+jmPmFw1vJB2F5NBzFXLJxV+g==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-switch@4.1.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-TI8ufP2Az9oEbvyCeVE4+90PDSljGyuwix3fV58p7HV2o4wBnVToEyomJRVyTaZeqNPAp+vqeo4Wnj5u0ZZQBg==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-table@7.49.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-/FoPLX94muAQOxVpi1jhnpKjOIqUbT81eELQPAzSXOke4ky4oCWYUXOcVpL31ZCO90xScwVSXRd7coqtgtB1Ng==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/context",
+        "classnames",
+        "rc-resize-observer",
+        "rc-util",
+        "rc-virtual-list",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-tabs@15.4.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-llKuyiAVqmXm2z7OrmhX5cNb2ueZaL8ZyA2P4R+6/72NYYcbEgOXibwHiQCFY2RiN3swXl53SIABi2CumUS02g==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-dropdown",
+        "rc-menu",
+        "rc-motion",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-textarea@1.8.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-UFAezAqltyR00a8Lf0IPAyTd29Jj9ee8wt8DqXyDMal7r/Cg/nDt3e1OOv3Th4W6mKaZijjgwuPXhAfVNTN8sw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-input",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-tooltip@6.2.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-rws0duD/3sHHsD905Nex7FvoUGy2UBQRhTkKxeEvr2FB+r21HsOxcDJI0TzyO8NHhnAA8ILr8pfbSBg5Jj5KBg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@rc-component/trigger",
+        "classnames",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-tree-select@5.24.5_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-PnyR8LZJWaiEFw0SHRqo4MNQWyyZsyMs8eNmo68uXZWjxc7QqeWcjPPoONN0rc90c3HZqGF9z+Roz+GLzY5GXA==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-select",
+        "rc-tree",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-tree@5.10.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-FPXb3tT/u39mgjr6JNlHaUTYfHkVGW56XaGDahDpEFLGsnPxGcVLNTjcqoQb/GNbSCycl7tD7EvIymwOTP0+Yw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-motion",
+        "rc-util",
+        "rc-virtual-list",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-upload@4.8.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-toEAhwl4hjLAI1u8/CgKWt30BR06ulPa4iGQSMvSXoHzO88gPCslxqV/mnn4gJU7PDoltGIC9Eh+wkeudqgHyw==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
+    "rc-util@5.44.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-uGSk3hpPBLa3/0QAcKhCjgl4SFnhQCJDLvvpoLdbR6KgDuXrujG+dQaUeUvBJr2ZWak1O/9n+cYbJiWmmk95EQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "react",
+        "react-dom",
+        "react-is"
+      ]
+    },
+    "rc-virtual-list@3.16.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-algM5UsB7vrlPNr9lsZEH8s9KHkP8XbT/Y0qylyPkiM8mIOlSJLjBNADcmbYPEQCm4zW82mZRJuVHNzqqN0EAQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "classnames",
+        "rc-resize-observer",
+        "rc-util",
+        "react",
+        "react-dom"
+      ]
+    },
     "react-dom@18.3.1_react@18.3.1": {
       "integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
       "dependencies": [
@@ -581,6 +1208,9 @@
         "react",
         "scheduler"
       ]
+    },
+    "react-is@18.3.1": {
+      "integrity": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg=="
     },
     "react-refresh@0.14.2": {
       "integrity": "sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA=="
@@ -606,6 +1236,12 @@
       "dependencies": [
         "loose-envify"
       ]
+    },
+    "regenerator-runtime@0.14.1": {
+      "integrity": "sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw=="
+    },
+    "resize-observer-polyfill@1.5.1": {
+      "integrity": "sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg=="
     },
     "rollup@4.27.3": {
       "integrity": "sha512-SLsCOnlmGt9VoZ9Ek8yBK8tAdmPHeppkw+Xa7yDlCEhDTvwYei03JlWo1fdc7YTfLZ4tD8riJCUyAgTbszk1fQ==",
@@ -638,11 +1274,29 @@
         "loose-envify"
       ]
     },
+    "scroll-into-view-if-needed@3.1.0": {
+      "integrity": "sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==",
+      "dependencies": [
+        "compute-scroll-into-view"
+      ]
+    },
     "semver@6.3.1": {
       "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
+    },
+    "string-convert@0.2.1": {
+      "integrity": "sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A=="
+    },
+    "stylis@4.3.4": {
+      "integrity": "sha512-osIBl6BGUmSfDkyH2mB7EFvCJntXDrLhKjHTRj/rK6xLH0yuPrHULDRQzKokSOD4VoorhtKpfcfW1GAntu8now=="
+    },
+    "throttle-debounce@5.0.2": {
+      "integrity": "sha512-B71/4oyj61iNH0KeCamLuE2rmKuTO5byTOSVwECM5FA7TiAiAW+UqTKZ9ERueC4qvgSttUhdmq1mXC3kJqGX7A=="
+    },
+    "toggle-selection@1.0.6": {
+      "integrity": "sha512-BiZS+C1OS8g/q2RRbJmy59xpyghNBqrr6k5L/uKBGRsTfxmu3ffiRnd8mlGPUVayg8pvfi5urfnu8TU7DVOkLQ=="
     },
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
@@ -676,6 +1330,7 @@
       "npm:@deno/vite-plugin@1",
       "npm:@types/react@^18.3.12",
       "npm:@vitejs/plugin-react@^4.3.3",
+      "npm:antd@^5.22.5",
       "npm:react-dom@^18.3.1",
       "npm:react-router-dom@^6.28.0",
       "npm:react@^18.3.1",
